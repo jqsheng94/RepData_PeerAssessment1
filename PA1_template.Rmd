@@ -136,7 +136,9 @@ activity$daylevel=factor(activity$daylevel)
 stepsByDay=aggregate(steps ~ interval + daylevel, data = activity, mean)
 names(stepsByDay)=c("interval", "daylevel", "steps")
 ```
-Make a panel plot containing a time series plot (i.e. type = “l”) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). The plot should look something like the following, which was creating using simulated data:
+
+Now, we construct a panel plot to investigate the relationship between the 5-minute intervals and the average number of steps taken, averaged across all weekday days and weekend days.
+Now we can contruct a panel plot containing to tsee of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). The plot should look something like the following, which was creating using simulated data:
 ```r
 xyplot(steps ~ interval | daylevel, stepsByDay, type = "l", layout = c(1, 2), 
     xlab = "Interval", ylab = "Number of steps")
