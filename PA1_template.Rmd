@@ -10,12 +10,12 @@ date: The date on which the measurement was taken in YYYY-MM-DD format
 interval: Identifier for the 5-minute interval in which measurement was taken The dataset is stored in a comma-separated-value (CSV) file and there are a total of 17,568 observations in this dataset.
 
 ## Loading and preprocessing the data
-##### 1. Load the data into R
+Load the data into R
 ```r
 activity <- read.csv("C:/Users/jiaqi/Desktop/activity.csv")
 View(activity)
 ```
-##### 2. Transfer the data into propriate format for analyzing
+Transfer the data into propriate format for analyzing. The date of data should look in the format YYYY-MM-DD.
 
 ```r
 activity$date <- as.Date(activity$date, "%Y-%m-%d")
