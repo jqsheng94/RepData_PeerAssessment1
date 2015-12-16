@@ -27,7 +27,7 @@ Then construct a histogram for total number steps taken per day
 ```r
 hist(Total_steps$steps, main = "The number of Steps by Day", xlab = "day", col="skyblue", border=F,  breaks=20)
 ```
-image: ![graph1](C:\Users\jiaqi\Desktop\Merchine learning\) 
+![Sample panel plot](instructions_fig/sample_panelplot.png)
 
 And then calculate the median and average value 
 
