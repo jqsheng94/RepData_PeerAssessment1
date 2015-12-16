@@ -14,8 +14,9 @@ View(activity)
 ```
 ##### 2. Transfer the data into propriate format for analyzing
 
-
-
+```r
+activity$date <- as.Date(activity$date, "%Y-%m-%d")
+```
 
 ## What is mean total number of steps taken per day?
 
