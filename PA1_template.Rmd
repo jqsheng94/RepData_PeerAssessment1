@@ -15,7 +15,7 @@ Load the data into R
 activity <- read.csv("C:/Users/jiaqi/Desktop/activity.csv")
 View(activity)
 ```
-Transfer the data into propriate format for analyzing. The date of data should look in the format YYYY-MM-DD.
+Transfer the data into propriate format for analyzing. The date on which the measurement was taken in YYYY-MM-DD format interval.
 
 ```r
 activity$date <- as.Date(activity$date, "%Y-%m-%d")
@@ -69,7 +69,7 @@ max_value
 
 ## Imputing missing values
 
-First, we need to find out the number of missing values in the data. (cells with “NA”)
+First, we need to find out the number of missing values in the data. (missing values are coded as NA)
 
 ```r
 Missing_values=sum(is.na(activity))
