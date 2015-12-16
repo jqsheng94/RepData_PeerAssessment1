@@ -141,3 +141,4 @@ Make a panel plot containing a time series plot (i.e. type = “l”) of the 5-m
 xyplot(steps ~ interval | daylevel, stepsByDay, type = "l", layout = c(1, 2), 
     xlab = "Interval", ylab = "Number of steps")
 ```
+![Panel Plot](instructions_fig/two.png)
