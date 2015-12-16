@@ -9,8 +9,8 @@ output:
 ## Loading and preprocessing the data
 ##### 1. Load the data into R
 ```r
-> activity <- read.csv("C:/Users/jiaqi/Desktop/activity.csv")
->   View(activity)
+activity <- read.csv("C:/Users/jiaqi/Desktop/activity.csv")
+View(activity)
 ```
 ##### 2. Transfer the data into propriate format for analyzing
 
@@ -19,8 +19,14 @@ output:
 
 ## What is mean total number of steps taken per day?
 
-
-
+First is using aggregate function
+```r
+Total_steps=aggregate(steps ~ date, data = activity, sum, na.rm = TRUE)
+```
+Then construct a histogram for total number steps taken per day
+```r
+hist(Total_steps$steps, main = "The number of Steps by Day", xlab = "day", col="skyblue", border=F,  breaks=20)
+```
 ## What is the average daily activity pattern?
 
 
