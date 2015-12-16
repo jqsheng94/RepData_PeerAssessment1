@@ -53,6 +53,8 @@ plot(row.names(time_series), time_series, type = "l", xlab = "5 minutes interval
 +      ylab = "Average across all Days", main = "Time Series Plot", 
 +      col = "red", lwd=3, ylim=c(0,250))
 ```
+![time series plot](instructions_fig/time_series.png)
+
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 ```r
 max_interval=which.max(time_series)
