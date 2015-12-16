@@ -27,6 +27,22 @@ Then construct a histogram for total number steps taken per day
 ```r
 hist(Total_steps$steps, main = "The number of Steps by Day", xlab = "day", col="skyblue", border=F,  breaks=20)
 ```
+image: ![](C:\Users\jiaqi\Desktop\Merchine learning/graph1.png) 
+
+And then calculate the median and average value 
+
+```r
+Average=mean(Total_steps$steps)
+Average
+## [1] 10766.19
+Median=median(Total_steps$steps)
+Median
+## [1] 10765
+```
+
+So the mean is 10766.19 and median is 10765
+
+
 ## What is the average daily activity pattern?
 
 
