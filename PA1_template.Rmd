@@ -8,6 +8,8 @@ The variables included in this dataset are:
 ```{r simulate_data}
 x <- rnorm(100)
 y <- 2*x + rnorm(100)
+x
+y
 ```
 
 steps: Number of steps taking in a 5-minute interval (missing values are coded as NA)
