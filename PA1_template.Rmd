@@ -5,11 +5,6 @@ This assignment makes use of data from a personal activity monitoring device. Th
 
 The variables included in this dataset are:
 
-```{r chunk_name, echo=FALSE}
-x <- rnorm(100)
-y <- 2*x + rnorm(100)
-cor(x, y)
-```
 
 steps: Number of steps taking in a 5-minute interval (missing values are coded as NA)
 date: The date on which the measurement was taken in YYYY-MM-DD format
